@@ -16,11 +16,12 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/202%20(2)-6WLFbKIS4kZ8YcD5sJHWQLn5hGkMQM.png"
+              src="/logo.svg"
               alt="Coffee Song"
-              width={120}
-              height={40}
+              width={80}
+              height={80}
               className="h-12 w-auto"
+              priority
             />
           </Link>
 
@@ -79,4 +80,3 @@ export default function Header() {
     </header>
   )
 }
-

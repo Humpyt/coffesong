@@ -38,7 +38,13 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Logo and Info */}
           <div className="col-span-2 md:col-span-1 space-y-4">
-            <Image src="/placeholder.svg" alt="Coffee Song" width={80} height={80} className="invert" />
+            <Image 
+              src="/logo.svg" 
+              alt="Coffee Song" 
+              width={100} 
+              height={100} 
+              className="w-24 h-24"
+            />
             <div className="space-y-2">
               <p className="text-lg font-medium">Coffee Song</p>
               <p className="text-gray-300">Berkeley, California</p>
