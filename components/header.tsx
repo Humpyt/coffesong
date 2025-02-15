@@ -1,13 +1,25 @@
+"use client"
+
 import Link from "next/link"
+import Image from "next/image"
 import { Search, ShoppingCart } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useCart } from "../context/CartContext"
 
 export default function Header() {
+  const { items } = useCart()
+
   return (
     <header className="w-full bg-white border-b">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="font-bold text-2xl">
-          P
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/202%20(1)-jtWlG5C7g8QOxHJ3tSXfoSpW4RkCHJ.png"
+            alt="Coffee Song"
+            width={120}
+            height={40}
+            className="h-12 w-auto"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">
@@ -16,6 +28,9 @@ export default function Header() {
           </Link>
           <Link href="/coffee" className="text-sm uppercase">
             Coffee
+          </Link>
+          <Link href="/subscribe" className="text-sm uppercase">
+            Subscribe
           </Link>
           <Link href="/shop" className="text-sm uppercase">
             Shop
@@ -42,12 +57,18 @@ export default function Header() {
             Log In
           </Button>
 
-          <button className="p-2">
-            <ShoppingCart className="w-5 h-5" />
-          </button>
+          <div className="relative">
+            <Link href="/cart" className="relative">
+              <ShoppingCart className="w-6 h-6" />
+              {items.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-[#B87D4B] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  {items.length}
+                </span>
+              )}
+            </Link>
+          </div>
         </div>
       </div>
     </header>
   )
 }
-

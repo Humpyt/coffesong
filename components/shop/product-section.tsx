@@ -6,6 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 interface Product {
+  id: string
   name: string
   price: string
   originalPrice?: string
@@ -30,7 +31,7 @@ interface ProductSectionProps {
 function ProductCard({ product }: { product: Product }) {
   return (
     <Link
-      href={`/products/${product.slug || product.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+      href={`/products/${product.id}`}
       className="w-[280px] bg-white hover:shadow-lg transition-shadow duration-300"
     >
       <div className="bg-[#8B6834] text-white text-[10px] text-center py-1.5 uppercase tracking-wider">
@@ -112,4 +113,3 @@ export default function ProductSection({ title, filters, products }: ProductSect
     </div>
   )
 }
-

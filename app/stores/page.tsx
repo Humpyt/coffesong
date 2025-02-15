@@ -1,7 +1,6 @@
 import Banner from "@/components/banner"
 import Header from "@/components/header"
 import StoreLocator from "@/components/stores/store-locator"
-import NewsletterSignup from "@/components/newsletter-signup"
 import Footer from "@/components/footer"
 
 export default function StoresPage() {
@@ -10,7 +9,6 @@ export default function StoresPage() {
       <Banner />
       <Header />
       <StoreLocator />
-      <NewsletterSignup />
       <Footer />
     </main>
   )

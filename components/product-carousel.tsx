@@ -72,25 +72,25 @@ export default function ProductCarousel() {
 
         <div ref={scrollRef} className="flex overflow-x-auto gap-4 scroll-smooth hide-scrollbar">
           <ProductCard
-            name="Premium Dark Roast"
+            name="Coffee Song Original"
             price="$18.95"
             imageUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13.jpg-eE3vY3kJ8JJ4uphvX65T4sP4YUeE2z.jpeg"
             flavorNotes={["Bold", "Rich", "Smooth"]}
           />
           <ProductCard
-            name="Classic Blend"
+            name="Mountain Tune"
             price="$18.95"
             imageUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/09.jpg-iyw9wsnBKNJXGSb2DylULNsmdoSYAD.jpeg"
             flavorNotes={["Balanced", "Nutty", "Sweet"]}
           />
           <ProductCard
-            name="Artisanal Blend"
+            name="Salsa Bamba Blend"
             price="$19.95"
             imageUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/12.jpg-QfFwXpkAtDnWyIdRc4QvsDDmABLZID.jpeg"
             flavorNotes={["Complex", "Fruity", "Bright"]}
           />
           <ProductCard
-            name="Seasonal Special"
+            name="Kadongo Kamu Single"
             price="$21.95"
             imageUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/11.jpg-Zoaz0mFRmxPySDnY3ToCaAUTqfRaF7.jpeg"
             flavorNotes={["Limited", "Exclusive", "Seasonal"]}

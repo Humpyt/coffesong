@@ -21,24 +21,21 @@ const sections: Section[] = [
     title: "SHOP BY COFFEE BEANS",
     products: [
       {
-        name: "MAJOR DICKASON'S BLEND®",
+        name: "Baled Blend",
         price: "19.95",
-        imageUrl:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
+        imageUrl: "/placeholder.svg",
         roastType: "DARK ROAST",
       },
       {
-        name: "ETHIOPIAN SUPER NATURAL ORGANIC",
+        name: "Country Surprise",
         price: "22.95",
-        imageUrl:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
+        imageUrl: "/placeholder.svg",
         roastType: "LIMITED RELEASE",
       },
       {
-        name: "FRENCH ROAST",
+        name: "Flute Spice",
         price: "19.95",
-        imageUrl:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
+        imageUrl: "/placeholder.svg",
         roastType: "DARK ROAST",
       },
     ],
@@ -47,24 +44,21 @@ const sections: Section[] = [
     title: "SHOP BY SUBSCRIBER EXCLUSIVES",
     products: [
       {
-        name: "SMALL BATCH SERIES",
+        name: "Hardrock Roast",
         price: "22.95",
-        imageUrl:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
+        imageUrl: "/placeholder.svg",
         roastType: "SUBSCRIPTION",
       },
       {
-        name: "DARK ROAST SERIES",
+        name: "Cpop Origin",
         price: "19.95",
-        imageUrl:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
+        imageUrl: "/placeholder.svg",
         roastType: "SUBSCRIPTION",
       },
       {
-        name: "SEASONAL SERIES",
+        name: "Mountain Tune",
         price: "21.95",
-        imageUrl:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
+        imageUrl: "/placeholder.svg",
         roastType: "SUBSCRIPTION",
       },
     ],
@@ -73,21 +67,21 @@ const sections: Section[] = [
     title: "SHOP BY K-CUP PODS",
     products: [
       {
-        name: "GET THE GRIND K-CUP® PODS",
+        name: "Peet's Coffee K-Cup® Pods",
         price: "14.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "K-CUP PODS",
       },
       {
-        name: "SUN CATCHER K-CUP® PODS",
+        name: "Peet's Coffee Sun Catcher K-Cup® Pods",
         price: "14.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "K-CUP PODS",
       },
       {
-        name: "K-CUP® PODS SERIES",
+        name: "Peet's Coffee K-Cup® Pods Variety Pack",
         price: "15.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
@@ -99,21 +93,21 @@ const sections: Section[] = [
     title: "SHOP BY TEA",
     products: [
       {
-        name: "ORGANIC BREAKFAST",
+        name: "Peet's Coffee Organic Breakfast Tea",
         price: "9.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "BLACK TEA",
       },
       {
-        name: "GREEN TEA TROPICAL",
+        name: "Peet's Coffee Green Tea Tropical",
         price: "9.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "GREEN TEA",
       },
       {
-        name: "ORGANIC EARL GREY",
+        name: "Peet's Coffee Organic Earl Grey Tea",
         price: "9.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
@@ -125,21 +119,21 @@ const sections: Section[] = [
     title: "SHOP BY ESPRESSO CAPSULES",
     products: [
       {
-        name: "RISTRETTO ESPRESSO CAPSULES",
+        name: "Peet's Coffee Ristretto Espresso Capsules",
         price: "11.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "ESPRESSO",
       },
       {
-        name: "CREMA SCURA ESPRESSO CAPSULES",
+        name: "Peet's Coffee Crema Scura Espresso Capsules",
         price: "11.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "ESPRESSO",
       },
       {
-        name: "RICCHEZZA ESPRESSO CAPSULES",
+        name: "Peet's Coffee Ricchezza Espresso Capsules",
         price: "11.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
@@ -151,21 +145,21 @@ const sections: Section[] = [
     title: "SHOP BY DECAF",
     products: [
       {
-        name: "DECAF MAJOR DICKASON'S BLEND®",
+        name: "Peet's Coffee Decaf Major Dickason's Blend®",
         price: "19.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "DECAF",
       },
       {
-        name: "DECAF HOUSE BLEND",
+        name: "Peet's Coffee Decaf House Blend",
         price: "18.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "DECAF",
       },
       {
-        name: "DECAF ITALIAN ROAST",
+        name: "Peet's Coffee Decaf Italian Roast",
         price: "19.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
@@ -177,21 +171,21 @@ const sections: Section[] = [
     title: "SHOP BY MUGS + GEAR",
     products: [
       {
-        name: "PEET'S TRAVEL MUG",
+        name: "Peet's Coffee Travel Mug",
         price: "24.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "GEAR",
       },
       {
-        name: "NO BREAK COFFEE MUG",
+        name: "Peet's Coffee No Break Coffee Mug",
         price: "19.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "GEAR",
       },
       {
-        name: "YOU GOT THIS MUG",
+        name: "Peet's Coffee You Got This Mug",
         price: "14.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
@@ -203,21 +197,21 @@ const sections: Section[] = [
     title: "SHOP BY BUNDLES",
     products: [
       {
-        name: "BEST SELLERS BUNDLE",
+        name: "Peet's Coffee Best Sellers Bundle",
         price: "59.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "BUNDLE",
       },
       {
-        name: "K-CUP® VALUE PACK SAMPLE BUNDLE",
+        name: "Peet's Coffee K-Cup® Value Pack Sample Bundle",
         price: "49.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "BUNDLE",
       },
       {
-        name: "ESPRESSO CAPSULES SAMPLE BUNDLE",
+        name: "Peet's Coffee Espresso Capsules Sample Bundle",
         price: "34.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
@@ -229,21 +223,21 @@ const sections: Section[] = [
     title: "SHOP BY FLAVORED COFFEE & K-CUP PODS",
     products: [
       {
-        name: "HAZELNUT MOCHA",
+        name: "Peet's Coffee Hazelnut Mocha",
         price: "19.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "FLAVORED",
       },
       {
-        name: "CARAMEL BRULÉE",
+        name: "Peet's Coffee Caramel Brûlée",
         price: "19.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",
         roastType: "FLAVORED",
       },
       {
-        name: "VANILLA",
+        name: "Peet's Coffee Vanilla",
         price: "19.95",
         imageUrl:
           "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-peets-collections-shop-all-2025-02-11-22_41_31-PTuVU7BKJkuVq74Wq1hihaVY3B2mFB.png",

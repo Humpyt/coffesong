@@ -24,8 +24,8 @@ export default function Hero() {
 
       <div className="relative w-full h-full min-h-[400px]">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/07.jpg-7s9w0wcrTRkm7IZHufjXxiXgcKyn5V.jpeg"
-          alt="Featured Coffee Bag"
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/aroma_photo_01.jpg-oOGYmPzG90IQVo0UoKtrDhZppVAWCZ.jpeg"
+          alt="Featured Coffee Beans"
           fill
           className="object-cover"
           priority

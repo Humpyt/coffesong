@@ -5,6 +5,7 @@ import ShopNav from "@/components/shop/nav"
 import ShopContent from "@/components/shop/content"
 import NewsletterSignup from "@/components/newsletter-signup"
 import Footer from "@/components/footer"
+import CoffeeBeansSection from "@/components/shop/coffee-beans-section"
 
 export default function ShopPage() {
   return (
@@ -14,6 +15,7 @@ export default function ShopPage() {
       <ShopHero />
       <ShopNav />
       <ShopContent />
+      <CoffeeBeansSection />
       <NewsletterSignup />
       <Footer />
     </main>

@@ -1,19 +1,20 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Tag, Truck, Calendar } from "lucide-react"
+import Link from "next/link"
 
 export default function SubscriptionPromo() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative aspect-square w-full">
+        <Link href="/subscribe" className="relative aspect-square w-full">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/top_BG.jpg-u3OKi0AQ1ygEBjnaD4Ha6YIx9mQd7M.jpeg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1eGN3x399HcyyI07kEBh6PMWsMJ6TH.png"
             alt="Coffee Subscription"
             fill
             className="object-cover rounded-lg"
           />
-        </div>
+        </Link>
 
         <div className="space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#8B6834]">
@@ -46,9 +47,11 @@ export default function SubscriptionPromo() {
             </div>
           </div>
 
-          <Button className="bg-[#8B6834] hover:bg-[#725628] text-white px-8 py-6 w-full md:w-auto">
-            CHOOSE A SUBSCRIPTION
-          </Button>
+          <Link href="/subscribe">
+            <Button className="bg-[#8B6834] hover:bg-[#725628] text-white px-8 py-6 w-full md:w-auto">
+              CHOOSE A SUBSCRIPTION
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

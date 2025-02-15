@@ -2,142 +2,126 @@ import Image from "next/image"
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
 
-const footerLinks = {
-  "HELP CENTER": [
-    { name: "CONTACT US", href: "/contact" },
-    { name: "HELP CENTER", href: "/help" },
-    { name: "SHIPPING & RETURNS", href: "/shipping" },
+const footerSections = {
+  SHOP: [
+    { name: "Coffee Beans", href: "/coffee-beans" },
+    { name: "Subscriptions", href: "/subscriptions" },
+    { name: "Gift Cards", href: "/gift-cards" },
+    { name: "Merchandise", href: "/merchandise" },
   ],
-  "GIFT CARDS": [{ name: "SHOP GIFT CARDS", href: "/gift-cards" }],
-  OFFERS: [
-    { name: "STUDENT DISCOUNT", href: "/student-discount" },
-    { name: "CURRENT OFFERS", href: "/offers" },
-    { name: "GET $25", href: "/referral" },
+  LEARN: [
+    { name: "Our Story", href: "/our-story" },
+    { name: "Brewing Guides", href: "/brewing-guides" },
+    { name: "Blog", href: "/blog" },
+    { name: "Coffee 101", href: "/coffee-101" },
   ],
-  COMPANY: [
-    { name: "CAREERS", href: "/careers" },
-    { name: "OUR PEOPLE", href: "/our-people" },
-    { name: "NEWSROOM", href: "/news" },
-    { name: "CODE OF ETHICS", href: "/ethics" },
-    { name: "SUPPLY CHAIN TRANSPARENCY", href: "/supply-chain" },
-    { name: "SUPPLIER CODE OF CONDUCT", href: "/supplier-code" },
+  SUPPORT: [
+    { name: "Contact Us", href: "/contact" },
+    { name: "Shipping", href: "/shipping" },
+    { name: "Returns", href: "/returns" },
+    { name: "FAQ", href: "/faq" },
   ],
-  "PARTNER WITH COFFEE SONG": [
-    { name: "FOODSERVICE PROGRAM", href: "/foodservice" },
-    { name: "BECOME AN AFFILIATE", href: "/affiliate" },
-    { name: "FRANCHISE", href: "/franchise" },
+  WHOLESALE: [
+    { name: "Become a Partner", href: "/wholesale" },
+    { name: "Find a Store", href: "/stores" },
+    { name: "Bulk Orders", href: "/bulk-orders" },
   ],
-  "FIND COFFEE SONG IN GROCERY": [{ name: "PRODUCT FINDER", href: "/product-finder" }],
-  BLOG: [{ name: "THE CUPPING ROOM", href: "/blog" }],
 }
+
+const socialLinks = [
+  { label: 'Facebook', href: '#', icon: Facebook },
+  { label: 'Twitter', href: '#', icon: Twitter },
+  { label: 'Instagram', href: '#', icon: Instagram },
+  { label: 'LinkedIn', href: '#', icon: Linkedin },
+  { label: 'YouTube', href: '#', icon: Youtube }
+];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2D2926] text-white py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Logo and Info */}
-          <div className="col-span-2 md:col-span-1 space-y-4">
-            <Image 
-              src="/logo.svg" 
-              alt="Coffee Song" 
-              width={100} 
-              height={100} 
-              className="w-24 h-24"
-            />
-            <div className="space-y-2">
-              <p className="text-lg font-medium">Coffee Song</p>
-              <p className="text-gray-300">Berkeley, California</p>
-              <p className="font-serif text-xl mt-2">Est. 1966</p>
-            </div>
-          </div>
-
-          {/* Links Sections - Organized in columns */}
-          <div className="col-span-2 md:col-span-2 lg:col-span-2">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-              {Object.entries(footerLinks).map(([section, links]) => (
-                <div key={section} className="space-y-3">
-                  <h3 className="font-bold text-sm tracking-wide">{section}</h3>
-                  <ul className="space-y-2">
-                    {links.map((link) => (
-                      <li key={link.name}>
-                        <Link 
-                          href={link.href} 
-                          className="text-gray-300 hover:text-white text-sm transition-colors duration-200"
-                        >
-                          {link.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+    <footer className="bg-[#2D2926] text-white">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Main Footer Content */}
+        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 border-b border-gray-700">
+          {/* Logo and About Section */}
+          <div className="lg:col-span-4 space-y-6">
+            <Link href="/" className="block">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/202%20(2)-mYdLBv5OUGs7FhABOR5x8I5wLj9jnU.png"
+                alt="Coffee Song"
+                width={180}
+                height={60}
+                className="brightness-0 invert"
+              />
+            </Link>
+            <p className="text-gray-400 leading-relaxed">
+              Crafting exceptional coffee experiences since 2020. Every bean, every roast, every cup tells a story.
+            </p>
+            <div className="flex gap-4">
+              {socialLinks.map((social) => (
+                <Link
+                  key={social.label}
+                  href={social.href}
+                  className="text-gray-400 hover:text-white transition-colors"
+                  aria-label={social.label}
+                >
+                  <social.icon className="w-5 h-5" />
+                </Link>
               ))}
             </div>
           </div>
 
-          {/* App Downloads */}
-          <div className="col-span-2 md:col-span-1 space-y-4">
-            <h3 className="font-bold text-sm tracking-wide">THE COFFEE SONG APP</h3>
-            <div className="flex flex-col gap-3">
-              <Link href="#" className="w-fit">
-                <Image
-                  src="/placeholder.svg"
-                  alt="Download on the App Store"
-                  width={135}
-                  height={40}
-                  className="invert hover:opacity-80 transition-opacity"
-                />
-              </Link>
-              <Link href="#" className="w-fit">
-                <Image 
-                  src="/placeholder.svg" 
-                  alt="Get it on Google Play" 
-                  width={135} 
-                  height={40} 
-                  className="invert hover:opacity-80 transition-opacity" 
-                />
-              </Link>
-            </div>
+          {/* Navigation Sections */}
+          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+            {Object.entries(footerSections).map(([title, links]) => (
+              <div key={title}>
+                <h3 className="font-bold text-sm mb-4">{title}</h3>
+                <ul className="space-y-3">
+                  {links.map((link) => (
+                    <li key={link.name}>
+                      <Link href={link.href} className="text-gray-400 hover:text-white text-sm transition-colors">
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Social Links */}
-        <div className="flex justify-center gap-8 mt-12 mb-10">
-          <Link href="#" className="text-gray-300 hover:text-white transition-colors duration-200">
-            <Instagram className="w-6 h-6" />
-          </Link>
-          <Link href="#" className="text-gray-300 hover:text-white transition-colors duration-200">
-            <Twitter className="w-6 h-6" />
-          </Link>
-          <Link href="#" className="text-gray-300 hover:text-white transition-colors duration-200">
-            <Facebook className="w-6 h-6" />
-          </Link>
-          <Link href="#" className="text-gray-300 hover:text-white transition-colors duration-200">
-            <Youtube className="w-6 h-6" />
-          </Link>
-          <Link href="#" className="text-gray-300 hover:text-white transition-colors duration-200">
-            <Linkedin className="w-6 h-6" />
-          </Link>
+        {/* Newsletter Section */}
+        <div className="py-12 border-b border-gray-700">
+          <div className="max-w-md">
+            <h3 className="font-bold text-lg mb-2">Stay in Touch</h3>
+            <p className="text-gray-400 mb-4">Subscribe to our newsletter and receive 10% off your first order.</p>
+            <form className="flex gap-2">
+              <input
+                type="email"
+                placeholder="Your email"
+                className="flex-1 px-4 py-2 bg-gray-800 rounded-lg text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#8B6834]"
+              />
+              <button className="px-6 py-2 bg-[#8B6834] hover:bg-[#725628] rounded-lg transition-colors">
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
 
-        {/* Legal */}
-        <div className="border-t border-gray-700 pt-8 mt-8">
-          <div className="text-center text-sm text-gray-300 space-y-4">
-            <p> 2025, COFFEE SONG</p>
-            <div className="flex flex-wrap justify-center gap-6">
-              <Link href="/privacy" className="hover:text-white transition-colors duration-200">
+        {/* Bottom Section */}
+        <div className="py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
+              <Link href="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/privacy-choices" className="hover:text-white transition-colors duration-200">
-                Your Privacy Choices
+              <Link href="/terms" className="hover:text-white transition-colors">
+                Terms of Service
               </Link>
-              <Link href="/terms" className="hover:text-white transition-colors duration-200">
-                Terms of Use
+              <Link href="/accessibility" className="hover:text-white transition-colors">
+                Accessibility
               </Link>
             </div>
-            <p className="max-w-2xl mx-auto text-xs opacity-75 px-4">
-              *Espresso is a registered trademark of Societe des Produits Nestle S.A. and is not affiliated with Coffee Song Inc. Compatible with most Nespresso Original machines
-            </p>
+            <p> {new Date().getFullYear()} Coffee Song. All rights reserved.</p>
           </div>
         </div>
       </div>

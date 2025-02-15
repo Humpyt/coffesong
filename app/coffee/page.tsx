@@ -1,18 +1,20 @@
 import Banner from "@/components/banner"
 import Header from "@/components/header"
-import CoffeeHero from "@/components/coffee/hero"
-import CoffeeNav from "@/components/coffee/nav"
-import CoffeeContent from "@/components/coffee/content"
+import ShopHero from "@/components/shop/hero"
+import ShopNav from "@/components/shop/nav"
+import ShopContent from "@/components/shop/content"
+import NewsletterSignup from "@/components/newsletter-signup"
 import Footer from "@/components/footer"
 
 export default function CoffeePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <main className="min-h-screen bg-white">
       <Banner />
       <Header />
-      <CoffeeHero />
-      <CoffeeNav />
-      <CoffeeContent />
+      <ShopHero />
+      <ShopNav />
+      <ShopContent />
+      <NewsletterSignup />
       <Footer />
     </main>
   )

@@ -16,12 +16,11 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo.svg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/202%20(1)-jtWlG5C7g8QOxHJ3tSXfoSpW4RkCHJ.png"
               alt="Coffee Song"
-              width={80}
-              height={80}
+              width={120}
+              height={40}
               className="h-12 w-auto"
-              priority
             />
           </Link>
 
@@ -31,6 +30,9 @@ export default function Header() {
             </Link>
             <Link href="/coffee" className="text-sm uppercase">
               Coffee
+            </Link>
+            <Link href="/subscribe" className="text-sm uppercase">
+              Subscribe
             </Link>
             <div
               onMouseEnter={() => setIsShopMenuOpen(true)}
@@ -80,3 +82,4 @@ export default function Header() {
     </header>
   )
 }
+
